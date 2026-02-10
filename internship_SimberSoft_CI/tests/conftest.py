@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-from config import CONFIG
+from internship_SimberSoft_CI.config import Config
 
 
 @pytest.fixture
@@ -25,7 +25,7 @@ def driver():
 
     options = Options()
 
-    if CONFIG.HEADLESS:
+    if Config.HEADLESS:
         options.add_argument("--headless=new")
         logger.info("Headless режим включен")
 
@@ -35,7 +35,7 @@ def driver():
     try:
         service = Service(ChromeDriverManager().install())
         driver_instance = webdriver.Chrome(service=service, options=options)
-        driver_instance.set_page_load_timeout(CONFIG.PAGE_LOAD_TIMEOUT)
+        driver_instance.set_page_load_timeout(Config.PAGE_LOAD_TIMEOUT)
 
         logger.info("WebDriver успешно создан")
         yield driver_instance
@@ -59,7 +59,7 @@ def main_page(driver):
     Returns:
         MainPage instance
     """
-    from pages.main_page import MainPage
+    from internship_SimberSoft_CI.pages.main_page import MainPage
 
     logger = logging.getLogger("MainPageFixture")
     logger.info("Создание MainPage")

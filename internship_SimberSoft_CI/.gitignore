@@ -1,45 +1,61 @@
+# Создадим .gitignore в текущей папке (корне проекта)
+cat > .gitignore << 'EOF'
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
 venv/
-env/
-*.venv
-.env
-.python-version
+.env/
+.venv/
 
-# Selenium и тесты
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+.hypothesis/
+
+# Logs
 *.log
-geckodriver.log
-chromedriver.log
-*.png
-*.jpg
 
-# Отчеты
-reports/
+# Reports
+report.html
 allure-results/
-*.html
-*.xml
-*.json
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+test-results/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# PyTest кэш
-.pytest_cache/
-.coverage
-.mypy_cache/
-
-# Локальные настройки
-local_settings.py
-*.local
+# ChromeDriver
+chromedriver*
+geckodriver*
+msedgedriver*
+IEDriverServer*
+EOF

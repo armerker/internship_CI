@@ -13,7 +13,7 @@ class Config:
 
     # Browser settings
     BROWSER = "chrome"
-    HEADLESS = False
+    HEADLESS = True
 
     # Timeouts
     TIMEOUT = 10

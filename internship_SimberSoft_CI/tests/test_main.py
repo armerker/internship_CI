@@ -101,7 +101,7 @@ class TestMainPage:
                 found_count += 1
                 self.logger.info("найден", element_name)
             else:
-                self.logger.warning(" не найден", element_name)
+                self.logger.warning(f"не найден: {element_name}")
 
         self.logger.info("Найдено элементов: %s из %s", found_count, len(elements_to_check))
 

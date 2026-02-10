@@ -4,7 +4,7 @@ import logging
 import time
 import pytest
 
-from config import CONFIG
+from internship_SimberSoft_CI.config import Config
 
 
 class TestSearch:
@@ -22,7 +22,7 @@ class TestSearch:
         initial_url = main_page.driver.current_url
         self.logger.info("URL до поиска: %s", initial_url)
 
-        search_success = main_page.search(CONFIG.TEST_SEARCH_QUERY)
+        search_success = main_page.search(Config.TEST_SEARCH_QUERY)
 
         if not search_success:
             self.logger.error("Поиск не выполнился")
