@@ -22,26 +22,18 @@ class Config:
     # Test data
     TEST_SEARCH_QUERY = "искусство"
 
-    # Logging
-    LOG_LEVEL = logging.INFO
-    LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-
-    # Paths
-    PROJECT_ROOT = Path(__file__).parent
-    LOGS_DIR = PROJECT_ROOT / "logs"
-
 
 CONFIG = Config()
 
 # Создаем директорию для логов если ее нет
-os.makedirs(CONFIG.LOGS_DIR, exist_ok=True)
+os.makedirs("logs", exist_ok=True)
 
 # Настройка логирования
 logging.basicConfig(
-    level=CONFIG.LOG_LEVEL,
-    format=CONFIG.LOG_FORMAT,
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler(CONFIG.LOGS_DIR / "test.log"),
+        logging.FileHandler("logs/test.log"),
         logging.StreamHandler()
     ]
 )
