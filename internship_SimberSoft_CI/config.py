@@ -13,7 +13,11 @@ class Config:
 
     # Browser settings
     BROWSER = "chrome"
+<<<<<<< HEAD
     HEADLESS = True  # Для Jenkins ставим True
+=======
+    HEADLESS = True
+>>>>>>> e5f891d15e7156da0b26930ef8e55cfbec3c920a
 
     # Timeouts
     TIMEOUT = 10

@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-from pages.base_page import BasePage
+from internship_SimberSoft_CI.pages.base_page import BasePage
 
 
 class MainPage(BasePage):

@@ -5,8 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from config import CONFIG
-
+from internship_SimberSoft_CI.config import Config
 
 class BasePage:
     """Базовый класс для всех Page Objects."""
@@ -18,7 +17,7 @@ class BasePage:
             driver: WebDriver instance
         """
         self.driver = driver
-        self.wait = WebDriverWait(driver, CONFIG.TIMEOUT)
+        self.wait = WebDriverWait(driver, Config.TIMEOUT)
         self.logger = logging.getLogger(self.__class__.__name__)
 
     def find_element(self, locator):
@@ -134,7 +133,7 @@ class BasePage:
         Returns:
             bool: True если страница открыта успешно
         """
-        full_url = f"{CONFIG.BASE_URL}/{url}" if url else CONFIG.BASE_URL
+        full_url = f"{Config.BASE_URL}/{url}" if url else Config.BASE_URL
         self.logger.info("Открытие страницы: %s", full_url)
         try:
             self.driver.get(full_url)

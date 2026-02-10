@@ -12,12 +12,16 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+<<<<<<< HEAD:internship_SimberSoft_CI/conftest.py
 try:
     from config import Config
 except ImportError:
     # Альтернативный импорт
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from config import Config
+=======
+from internship_SimberSoft_CI.config import Config
+>>>>>>> e5f891d15e7156da0b26930ef8e55cfbec3c920a:internship_SimberSoft_CI/tests/conftest.py
 
 
 @pytest.fixture
@@ -64,7 +68,7 @@ def main_page(driver):
     Returns:
         MainPage instance
     """
-    from pages.main_page import MainPage
+    from internship_SimberSoft_CI.pages.main_page import MainPage
 
     page = MainPage(driver)
     if not page.open_page():
