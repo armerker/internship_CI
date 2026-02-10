@@ -1,9 +1,5 @@
 ﻿"""Тесты главной страницы Masters Bookstore."""
 
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import logging
 import pytest
 from selenium.webdriver.common.by import By
@@ -104,11 +100,7 @@ class TestMainPage:
                 found_count += 1
                 self.logger.info(f"Элемент '{element_name}' найден")
             else:
-<<<<<<< HEAD
                 self.logger.warning(f"Элемент '{element_name}' не найден")
-=======
-                self.logger.warning(f"не найден: {element_name}")
->>>>>>> e5f891d15e7156da0b26930ef8e55cfbec3c920a
 
         self.logger.info("Найдено элементов: %s из %s", found_count, len(elements_to_check))
 

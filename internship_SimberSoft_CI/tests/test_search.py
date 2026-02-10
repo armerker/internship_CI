@@ -4,7 +4,7 @@ import logging
 import time
 import pytest
 
-from internship_SimberSoft_CI.config import Config
+from config import Config
 
 
 class TestSearch:
