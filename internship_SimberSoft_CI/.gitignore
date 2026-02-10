@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.venv
+.env
+.python-version
+
+# Selenium и тесты
+*.log
+geckodriver.log
+chromedriver.log
+*.png
+*.jpg
+
+# Отчеты
+reports/
+allure-results/
+*.html
+*.xml
+*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PyTest кэш
+.pytest_cache/
+.coverage
+.mypy_cache/
+
+# Локальные настройки
+local_settings.py
+*.local
