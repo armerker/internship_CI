@@ -1,13 +1,23 @@
 """Фикстуры для тестов."""
 
-import logging
+import sys
+import os
+
+# Добавляем корень проекта в путь
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-from config import CONFIG
+try:
+    from config import Config
+except ImportError:
+    # Альтернативный импорт
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from config import Config
 
 
 @pytest.fixture
@@ -20,33 +30,28 @@ def driver():
     Teardown:
         Закрывает браузер
     """
-    logger = logging.getLogger("DriverFixture")
-    logger.info("Создание WebDriver")
-
     options = Options()
 
-    if CONFIG.HEADLESS:
+    if Config.HEADLESS:
         options.add_argument("--headless=new")
-        logger.info("Headless режим включен")
 
     options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
 
     try:
         service = Service(ChromeDriverManager().install())
         driver_instance = webdriver.Chrome(service=service, options=options)
-        driver_instance.set_page_load_timeout(CONFIG.PAGE_LOAD_TIMEOUT)
+        driver_instance.set_page_load_timeout(Config.PAGE_LOAD_TIMEOUT)
 
-        logger.info("WebDriver успешно создан")
         yield driver_instance
 
     except Exception as error:
-        logger.error("Ошибка при создании WebDriver: %s", error)
-        raise
+        pytest.fail(f"Ошибка при создании WebDriver: {error}")
 
     finally:
-        logger.info("Закрытие браузера")
-        driver_instance.quit()
+        if 'driver_instance' in locals():
+            driver_instance.quit()
 
 
 @pytest.fixture
@@ -61,13 +66,8 @@ def main_page(driver):
     """
     from pages.main_page import MainPage
 
-    logger = logging.getLogger("MainPageFixture")
-    logger.info("Создание MainPage")
-
     page = MainPage(driver)
-    if page.open_page():
-        logger.info("MainPage успешно создана и открыта")
-    else:
-        logger.warning("MainPage создана, но открытие страницы не удалось")
+    if not page.open_page():
+        pytest.fail("Не удалось открыть главную страницу")
 
     return page

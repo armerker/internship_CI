@@ -1,5 +1,9 @@
 ﻿"""Тесты главной страницы Masters Bookstore."""
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import logging
 import pytest
 from selenium.webdriver.common.by import By
@@ -74,7 +78,6 @@ class TestMainPage:
 
         if has_cart:
             self.logger.info("Иконка корзины найдена")
-            self.logger.info("Элемент видим: %s", cart_element.is_displayed())
         else:
             self.logger.warning("Иконка корзины не найдена")
 
@@ -91,7 +94,7 @@ class TestMainPage:
             ("меню 'книги'", main_page.MENU_BOOKS_TEXT),
             ("селект сортировки", main_page.SORT_SELECT),
             ("категория 'Все'", main_page.CATEGORY_ALL_TEXT),
-            ("иконка корзины", (By.XPATH, "//div[@class='t706__carticon-wrapper']")),
+            ("иконка корзины", main_page.CART_ICON),
         ]
 
         found_count = 0
@@ -99,9 +102,9 @@ class TestMainPage:
             element = main_page.find_element(locator)
             if element:
                 found_count += 1
-                self.logger.info("найден", element_name)
+                self.logger.info(f"Элемент '{element_name}' найден")
             else:
-                self.logger.warning(" не найден", element_name)
+                self.logger.warning(f"Элемент '{element_name}' не найден")
 
         self.logger.info("Найдено элементов: %s из %s", found_count, len(elements_to_check))
 

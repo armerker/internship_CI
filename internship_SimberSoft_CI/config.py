@@ -1,4 +1,4 @@
-"""Конфигурация проекта."""
+"""Конфигурационные настройки проекта."""
 
 import logging
 import os
@@ -13,7 +13,7 @@ class Config:
 
     # Browser settings
     BROWSER = "chrome"
-    HEADLESS = False
+    HEADLESS = True  # Для Jenkins ставим True
 
     # Timeouts
     TIMEOUT = 10
@@ -21,8 +21,6 @@ class Config:
 
     # Test data
     TEST_SEARCH_QUERY = "искусство"
-    TEST_EMAIL = "test@example.com"
-    TEST_PHONE = "+79999999999"
 
     # Logging
     LOG_LEVEL = logging.INFO

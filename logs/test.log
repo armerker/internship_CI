@@ -1,0 +1,1219 @@
+2026-02-10 21:56:10,586 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:56:10,587 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:56:13,238 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:56:14,161 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:56:15,065 - WDM - INFO - There is no [win64] chromedriver "144.0.7559.133" for browser google-chrome "144.0.7559" in cache
+2026-02-10 21:56:15,065 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:56:17,229 - WDM - INFO - WebDriver version 144.0.7559.133 selected
+2026-02-10 21:56:17,268 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-10 21:56:17,269 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-10 21:56:18,154 - WDM - INFO - Driver downloading response is 200
+2026-02-10 21:56:19,891 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:56:21,123 - WDM - INFO - Driver has been saved in cache [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133]
+2026-02-10 21:56:24,762 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 21:56:24,762 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 21:56:24,763 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru
+2026-02-10 21:56:25,756 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru
+2026-02-10 21:56:25,756 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 21:56:25,758 - TestMainPage - INFO - Запуск теста: test_page_loads
+2026-02-10 21:56:25,758 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 21:56:35,935 - MainPage - ERROR - Не удалось найти элемент ('css selector', 'header .logo'): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:56:35,935 - MainPage - WARNING - Элемент 'логотип' не отображается
+2026-02-10 21:56:46,270 - MainPage - ERROR - Не удалось найти элемент ('css selector', "input[type='search']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:56:46,270 - MainPage - WARNING - Элемент 'поле поиска' не отображается
+2026-02-10 21:56:49,943 - MainPage - ERROR - Не удалось найти элемент ('css selector', "a[href*='cart']"): Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=144.0.7559.133); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0xfba43e
+	0xfd8ef3
+	0x103f00c
+	0x1054df9
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:56:49,944 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 21:56:49,945 - MainPage - WARNING - Не все элементы главной страницы загружены
+2026-02-10 21:56:50,263 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:56:52,343 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:56:52,344 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:56:54,223 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:56:54,362 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:56:54,581 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:56:54,582 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:56:55,471 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:56:55,594 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:56:55,594 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:56:55,837 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:57:58,646 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:57:58,647 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:58:00,488 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:01,466 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:02,448 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 21:58:04,036 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 21:58:04,036 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 21:58:04,037 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:05,045 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:05,046 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 21:58:05,048 - TestMainPage - INFO - Запуск теста: test_page_loads
+2026-02-10 21:58:05,049 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 21:58:15,500 - MainPage - ERROR - Не удалось найти элемент ('css selector', 'header .logo'): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:58:15,500 - MainPage - WARNING - Элемент 'логотип' не отображается
+2026-02-10 21:58:25,810 - MainPage - ERROR - Не удалось найти элемент ('css selector', "input[type='search']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:58:25,810 - MainPage - WARNING - Элемент 'поле поиска' не отображается
+2026-02-10 21:58:36,159 - MainPage - ERROR - Не удалось найти элемент ('css selector', "a[href*='cart']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:58:36,160 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 21:58:36,160 - MainPage - WARNING - Не все элементы главной страницы загружены
+2026-02-10 21:58:36,403 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:58:38,796 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:58:38,796 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:58:40,592 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:41,626 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:42,596 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 21:58:44,096 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 21:58:44,097 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 21:58:44,097 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:45,008 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:45,009 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 21:58:45,010 - TestMainPage - INFO - Запуск теста: test_title_contains_name
+2026-02-10 21:58:45,020 - TestMainPage - INFO - Заголовок страницы: мasters bookstore | книги
+2026-02-10 21:58:45,030 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:58:47,335 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:58:47,336 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:58:49,152 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:50,149 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:58:51,136 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 21:58:52,703 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 21:58:52,703 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 21:58:52,704 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:53,540 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 21:58:53,540 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 21:58:53,542 - TestMainPage - INFO - Запуск теста: test_search_input_exists
+2026-02-10 21:59:04,015 - MainPage - ERROR - Не удалось найти элемент ('css selector', "input[type='search']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:59:04,016 - TestMainPage - WARNING - Поле поиска не найдено
+2026-02-10 21:59:04,024 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 21:59:06,447 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 21:59:06,447 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 21:59:08,270 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:59:10,276 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 21:59:11,280 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 21:59:12,847 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 21:59:12,848 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 21:59:12,848 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 21:59:13,691 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 21:59:13,692 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 21:59:13,693 - TestMainPage - INFO - Запуск теста: test_cart_icon_exists
+2026-02-10 21:59:23,701 - MainPage - ERROR - Не удалось найти элемент ('css selector', "a[href*='cart']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 21:59:23,702 - TestMainPage - WARNING - Иконка корзины не найдена
+2026-02-10 21:59:23,711 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:05:48,154 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:05:48,155 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:05:50,055 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:05:51,204 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:05:52,167 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:05:53,697 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:05:53,698 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:05:53,698 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:05:54,326 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:05:54,327 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:05:54,328 - TestMainPage - INFO - Запуск теста: test_page_loads
+2026-02-10 22:05:54,329 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:05:54,912 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:06:05,064 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:06:05,065 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:06:05,107 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:06:05,107 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:05,107 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:06:05,114 - TestMainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:05,115 - TestMainPage - INFO - Тест test_page_loads пройден успешно
+2026-02-10 22:06:05,116 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:06:07,574 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:06:07,575 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:06:09,283 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:10,353 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:11,365 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:06:12,863 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:06:12,863 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:06:12,864 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:13,461 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:13,461 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:06:13,463 - TestMainPage - INFO - Запуск теста: test_title_contains_name
+2026-02-10 22:06:13,472 - TestMainPage - INFO - Заголовок страницы: мasters bookstore | книги
+2026-02-10 22:06:13,728 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:06:16,094 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:06:16,094 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:06:17,795 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:18,720 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:19,664 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:06:20,665 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:06:20,666 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:06:20,666 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:21,507 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:21,507 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:06:21,509 - TestMainPage - INFO - Запуск теста: test_search_input_exists
+2026-02-10 22:06:21,572 - TestMainPage - INFO - Поле поиска найдено
+2026-02-10 22:06:21,573 - TestMainPage - INFO - Тест test_search_input_exists пройден успешно
+2026-02-10 22:06:21,575 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:06:23,857 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:06:23,858 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:06:25,590 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:26,743 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:06:27,695 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:06:29,215 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:06:29,216 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:06:29,216 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:29,827 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:06:29,827 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:06:29,828 - TestMainPage - INFO - Запуск теста: test_cart_icon_exists
+2026-02-10 22:06:30,005 - TestMainPage - WARNING - Иконка корзины не найдена
+2026-02-10 22:06:30,021 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:14:35,574 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:14:35,575 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:14:37,477 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:38,474 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:39,502 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:14:41,062 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:14:41,063 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:14:41,064 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:41,886 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:41,886 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:14:41,887 - TestCart - INFO - Запуск теста: test_cart_icon_navigates_to_cart
+2026-02-10 22:14:41,897 - TestCart - INFO - Начальный URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:42,234 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:14:44,621 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:14:44,622 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:14:46,345 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:47,275 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:48,308 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:14:49,815 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:14:49,816 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:14:49,816 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:50,393 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:50,393 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:14:50,394 - CartPageFixture - INFO - Создание CartPage
+2026-02-10 22:14:50,394 - CartPageFixture - INFO - CartPage создана
+2026-02-10 22:14:50,395 - TestCart - INFO - Запуск теста: test_empty_cart_display
+2026-02-10 22:14:50,405 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:14:52,686 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:14:52,687 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:14:54,425 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:55,586 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:14:56,547 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:14:58,071 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:14:58,071 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:14:58,072 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:58,669 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:14:58,670 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:14:58,670 - CartPageFixture - INFO - Создание CartPage
+2026-02-10 22:14:58,670 - CartPageFixture - INFO - CartPage создана
+2026-02-10 22:14:58,671 - TestCart - INFO - Запуск теста: test_cart_page_elements_exist
+2026-02-10 22:14:58,683 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:15:00,976 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:15:00,976 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:15:02,583 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:03,662 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:04,605 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:15:06,139 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:15:06,140 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:15:06,140 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:06,738 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:06,739 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:15:06,740 - TestMainPage - INFO - апуск теста: test_page_loads
+2026-02-10 22:15:06,760 - TestMainPage - INFO - аголовок: Мasters Bookstore | Книги
+2026-02-10 22:15:06,761 - TestMainPage - INFO - URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:06,761 - TestMainPage - INFO - Тест test_page_loads пройден успешно
+2026-02-10 22:15:06,764 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:15:09,128 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:15:09,128 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:15:10,896 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:11,834 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:12,773 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:15:14,293 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:15:14,294 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:15:14,294 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:14,873 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:14,874 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:15:14,875 - TestMainPage - INFO - апуск теста: test_title_contains_name
+2026-02-10 22:15:14,885 - TestMainPage - INFO - аголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:15:14,886 - TestMainPage - INFO - Тест test_title_contains_name пройден успешно
+2026-02-10 22:15:14,887 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:15:17,178 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:15:17,179 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:15:18,910 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:19,868 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:23,692 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:15:24,660 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:15:24,661 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:15:24,661 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:25,253 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:25,253 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:15:25,254 - TestMainPage - INFO - апуск теста: test_search_input_exists
+2026-02-10 22:15:25,803 - TestMainPage - INFO - Placeholder поля поиска: 'Поиск'
+2026-02-10 22:15:25,816 - TestMainPage - INFO - оле поиска найдено
+2026-02-10 22:15:25,817 - TestMainPage - INFO - Тест test_search_input_exists пройден успешно
+2026-02-10 22:15:25,819 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:15:28,115 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:15:28,115 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:15:29,846 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:30,862 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:31,812 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:15:33,294 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:15:33,295 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:15:33,295 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:33,877 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:33,877 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:15:33,879 - TestMainPage - INFO - апуск теста: test_cart_icon_exists
+2026-02-10 22:15:33,900 - TestMainPage - INFO - конка корзины найдена
+2026-02-10 22:15:33,920 - TestMainPage - INFO - лемент видим: False
+2026-02-10 22:15:33,920 - TestMainPage - INFO - Тест test_cart_icon_exists пройден успешно
+2026-02-10 22:15:33,922 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:15:36,216 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:15:36,216 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:15:37,936 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:39,016 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:15:39,952 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:15:41,429 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:15:41,430 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:15:41,430 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:42,283 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:15:42,284 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:15:42,286 - TestMainPage - INFO - апуск теста: test_basic_elements_exist
+2026-02-10 22:15:52,411 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:16:02,792 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//div[text()='Все']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:16:02,818 - TestMainPage - INFO - айдено элементов: 3 из 5
+2026-02-10 22:16:02,819 - TestMainPage - INFO - Тест test_basic_elements_exist пройден успешно
+2026-02-10 22:16:02,821 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:16:05,242 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:16:05,243 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:16:06,997 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:08,088 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:09,096 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:16:10,594 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:16:10,595 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:16:10,595 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:11,151 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:11,152 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:16:11,153 - TestSearch - INFO - Запуск теста: test_search_works
+2026-02-10 22:16:11,166 - TestSearch - INFO - URL до поиска: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:11,166 - MainPage - INFO - Выполнение поиска: 'искусство'
+2026-02-10 22:16:11,936 - MainPage - INFO - Поиск 'искусство' выполнен
+2026-02-10 22:16:15,770 - TestSearch - INFO - URL после поиска: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE&tfc_div=:::
+2026-02-10 22:16:15,770 - TestSearch - INFO - Тест test_search_works пройден успешно
+2026-02-10 22:16:15,773 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:16:18,197 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:16:18,197 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:16:19,903 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:20,955 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:21,906 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:16:23,414 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:16:23,414 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:16:23,414 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:23,983 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:23,984 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:16:23,985 - TestSearch - INFO - Запуск теста: test_search_with_empty_query
+2026-02-10 22:16:23,986 - MainPage - INFO - Выполнение поиска: ''
+2026-02-10 22:16:24,697 - MainPage - INFO - Поиск '' выполнен
+2026-02-10 22:16:24,698 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:16:24,764 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:16:34,811 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:16:34,811 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:16:34,854 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:16:34,854 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:34,854 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:16:34,855 - TestSearch - INFO - Тест test_search_with_empty_query пройден успешно
+2026-02-10 22:16:34,856 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:16:37,270 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:16:37,270 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:16:39,021 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:39,919 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:16:40,877 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:16:41,920 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:16:41,921 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:16:41,921 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:42,554 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:16:42,554 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:16:42,555 - TestSearch - INFO - Запуск теста: test_search_with_special_chars
+2026-02-10 22:16:42,556 - MainPage - INFO - Выполнение поиска: '@#$%^&*()'
+2026-02-10 22:16:43,320 - MainPage - INFO - Поиск '@#$%^&*()' выполнен
+2026-02-10 22:16:43,320 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:16:43,383 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:16:53,468 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:16:53,469 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:16:53,511 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:16:53,511 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=@%2523$%2525%5E&amp;*()&tfc_div=:::
+2026-02-10 22:16:53,512 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:16:53,518 - TestSearch - INFO - Тест test_search_with_special_chars пройден успешно
+2026-02-10 22:16:53,520 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:21:18,702 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:21:18,703 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:21:20,418 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:21:21,308 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:21:23,613 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:21:24,656 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:21:24,657 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:21:24,658 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:21:27,379 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:21:27,379 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:21:27,381 - TestCart - INFO - апуск теста: test_cart_icon_navigates_to_cart
+2026-02-10 22:21:27,393 - TestCart - INFO - ачальный URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:21:27,443 - MainPage - ERROR - Не удалось кликнуть по элементу ('xpath', "//div[@class='t706__carticon-wrapper']"): Message: element not interactable
+  (Session info: chrome=144.0.7559.133); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb2ce
+	0x1016a20
+	0x100b4f8
+	0x10381bc
+	0x100af34
+	0x1038384
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:21:27,444 - TestCart - ERROR - е удалось кликнуть на иконку корзины
+2026-02-10 22:21:27,700 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:21:29,998 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:21:29,998 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:21:31,696 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:21:32,812 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:21:33,819 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:21:35,433 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:21:35,434 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:21:35,434 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:21:36,327 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:21:36,327 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:21:36,327 - CartPageFixture - INFO - Создание CartPage
+2026-02-10 22:21:36,328 - CartPageFixture - INFO - CartPage создана
+2026-02-10 22:21:36,329 - TestCart - INFO - апуск теста: test_empty_cart_display
+2026-02-10 22:21:36,381 - MainPage - ERROR - Не удалось кликнуть по элементу ('xpath', "//div[@class='t706__carticon-wrapper']"): Message: element not interactable
+  (Session info: chrome=144.0.7559.133); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb2ce
+	0x1016a20
+	0x100b4f8
+	0x10381bc
+	0x100af34
+	0x1038384
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:21:36,382 - TestCart - ERROR - е удалось перейти в корзину
+2026-02-10 22:21:36,393 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:22:43,036 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:22:43,036 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:22:44,783 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:22:45,824 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:22:46,811 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:22:47,796 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:22:47,796 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:22:47,797 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:22:48,573 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:22:48,573 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:22:48,574 - TestMainPage - INFO - апуск теста: test_page_loads
+2026-02-10 22:22:48,588 - TestMainPage - INFO - аголовок: Мasters Bookstore | Книги
+2026-02-10 22:22:48,589 - TestMainPage - INFO - URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:22:48,589 - TestMainPage - INFO - Тест test_page_loads пройден успешно
+2026-02-10 22:22:48,591 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:22:50,882 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:22:50,883 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:22:52,641 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:22:53,568 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:22:54,497 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:22:56,015 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:22:56,015 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:22:56,015 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:22:56,709 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:22:56,709 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:22:56,711 - TestMainPage - INFO - апуск теста: test_title_contains_name
+2026-02-10 22:22:56,719 - TestMainPage - INFO - аголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:22:56,719 - TestMainPage - INFO - Тест test_title_contains_name пройден успешно
+2026-02-10 22:22:56,720 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:22:58,972 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:22:58,972 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:23:00,729 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:01,603 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:02,611 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:23:04,140 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:23:04,141 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:23:04,141 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:04,918 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:04,919 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:23:04,920 - TestMainPage - INFO - апуск теста: test_search_input_exists
+2026-02-10 22:23:04,948 - TestMainPage - INFO - Placeholder поля поиска: 'Поиск'
+2026-02-10 22:23:04,957 - TestMainPage - INFO - оле поиска найдено
+2026-02-10 22:23:04,958 - TestMainPage - INFO - Тест test_search_input_exists пройден успешно
+2026-02-10 22:23:04,959 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:23:07,268 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:23:07,269 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:23:09,033 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:09,983 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:10,869 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:23:12,344 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:23:12,344 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:23:12,345 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:13,201 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:13,202 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:23:13,204 - TestMainPage - INFO - апуск теста: test_cart_icon_exists
+2026-02-10 22:23:13,230 - TestMainPage - INFO - конка корзины найдена
+2026-02-10 22:23:13,246 - TestMainPage - INFO - лемент видим: False
+2026-02-10 22:23:13,247 - TestMainPage - INFO - Тест test_cart_icon_exists пройден успешно
+2026-02-10 22:23:13,249 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:23:15,560 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:23:15,560 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:23:17,298 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:18,394 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:19,387 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:23:20,387 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:23:20,388 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:23:20,388 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:21,222 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:21,223 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:23:21,224 - TestMainPage - INFO - апуск теста: test_basic_elements_exist
+2026-02-10 22:23:31,421 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:23:41,805 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//div[text()='Все']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:23:41,831 - TestMainPage - INFO - айдено элементов: 3 из 5
+2026-02-10 22:23:41,831 - TestMainPage - INFO - Тест test_basic_elements_exist пройден успешно
+2026-02-10 22:23:41,833 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:23:44,275 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:23:44,276 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:23:45,995 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:47,049 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:47,957 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:23:49,483 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:23:49,483 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:23:49,483 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:50,374 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:50,375 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:23:50,376 - TestSearch - INFO - Запуск теста: test_search_works
+2026-02-10 22:23:50,385 - TestSearch - INFO - URL до поиска: https://www.masters-bookstore.ru/books
+2026-02-10 22:23:50,386 - MainPage - INFO - Выполнение поиска: 'искусство'
+2026-02-10 22:23:50,658 - MainPage - INFO - Поиск 'искусство' выполнен
+2026-02-10 22:23:54,654 - TestSearch - INFO - URL после поиска: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE&tfc_div=:::
+2026-02-10 22:23:54,654 - TestSearch - INFO - Тест test_search_works пройден успешно
+2026-02-10 22:23:54,657 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:23:57,054 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:23:57,055 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:23:58,777 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:23:59,734 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:24:00,668 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:24:02,219 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:24:02,219 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:24:02,219 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:24:03,137 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:24:03,138 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:24:03,139 - TestSearch - INFO - Запуск теста: test_search_with_empty_query
+2026-02-10 22:24:03,139 - MainPage - INFO - Выполнение поиска: ''
+2026-02-10 22:24:03,401 - MainPage - INFO - Поиск '' выполнен
+2026-02-10 22:24:03,402 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:24:03,461 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:24:13,954 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:24:13,954 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:24:14,004 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:24:14,004 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:24:14,004 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:24:14,004 - TestSearch - INFO - Тест test_search_with_empty_query пройден успешно
+2026-02-10 22:24:14,006 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:24:16,463 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:24:16,464 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:24:18,151 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:24:19,208 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:24:20,164 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:24:21,667 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:24:21,667 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:24:21,668 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:24:22,506 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:24:22,506 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:24:22,508 - TestSearch - INFO - Запуск теста: test_search_with_special_chars
+2026-02-10 22:24:22,509 - MainPage - INFO - Выполнение поиска: '@#$%^&*()'
+2026-02-10 22:24:22,778 - MainPage - INFO - Поиск '@#$%^&*()' выполнен
+2026-02-10 22:24:22,779 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:24:22,844 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:24:33,145 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:24:33,146 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:24:33,189 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:24:33,190 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=@%2523$%2525%5E&amp;*()&tfc_div=:::
+2026-02-10 22:24:33,190 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:24:33,196 - TestSearch - INFO - Тест test_search_with_special_chars пройден успешно
+2026-02-10 22:24:33,198 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:40:40,883 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:40:40,884 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:40:42,534 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:40:43,624 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:40:44,675 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:40:46,194 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:40:46,220 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:40:46,221 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:40:47,127 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:40:47,128 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:40:47,130 - TestMainPage - INFO - Запуск теста: test_page_loads
+2026-02-10 22:40:47,146 - TestMainPage - INFO - Заголовок: Мasters Bookstore | Книги
+2026-02-10 22:40:47,146 - TestMainPage - INFO - URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:40:47,146 - TestMainPage - INFO - Тест test_page_loads пройден успешно
+2026-02-10 22:40:47,149 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:40:53,486 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:40:53,487 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:40:55,299 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:40:56,419 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:40:57,439 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:40:58,953 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:40:58,953 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:40:58,953 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:40:59,848 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:40:59,849 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:40:59,850 - TestMainPage - INFO - Запуск теста: test_title_contains_name
+2026-02-10 22:40:59,858 - TestMainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:40:59,858 - TestMainPage - INFO - Тест test_title_contains_name пройден успешно
+2026-02-10 22:40:59,860 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:41:06,254 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:41:06,255 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:41:08,052 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:09,111 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:10,146 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:41:11,652 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:41:11,653 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:41:11,653 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:12,573 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:12,574 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:41:12,575 - TestMainPage - INFO - Запуск теста: test_search_input_exists
+2026-02-10 22:41:12,633 - TestMainPage - INFO - Placeholder поля поиска: 'Поиск'
+2026-02-10 22:41:12,651 - TestMainPage - INFO - Поле поиска найдено
+2026-02-10 22:41:12,652 - TestMainPage - INFO - Тест test_search_input_exists пройден успешно
+2026-02-10 22:41:12,653 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:41:18,946 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:41:18,947 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:41:20,828 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:21,802 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:22,835 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:41:24,285 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:41:24,286 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:41:24,286 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:25,328 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:25,329 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:41:25,330 - TestMainPage - INFO - Запуск теста: test_cart_icon_exists
+2026-02-10 22:41:25,372 - TestMainPage - INFO - Иконка корзины найдена
+2026-02-10 22:41:25,413 - TestMainPage - INFO - Элемент видим: False
+2026-02-10 22:41:25,414 - TestMainPage - INFO - Тест test_cart_icon_exists пройден успешно
+2026-02-10 22:41:25,416 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:41:31,730 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:41:31,730 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:41:33,515 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:34,502 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:41:35,450 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:41:36,925 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:41:36,925 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:41:36,926 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:37,820 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:41:37,820 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:41:37,822 - TestMainPage - INFO - Запуск теста: test_basic_elements_exist
+2026-02-10 22:41:48,133 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:41:58,484 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//div[text()='Все']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:41:58,510 - TestMainPage - INFO - Найдено элементов: 3 из 5
+2026-02-10 22:41:58,511 - TestMainPage - INFO - Тест test_basic_elements_exist пройден успешно
+2026-02-10 22:41:58,512 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:42:04,991 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:42:04,992 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:42:06,812 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:07,903 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:08,928 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:42:10,444 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:42:10,445 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:42:10,445 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:11,738 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:11,738 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:42:11,739 - TestSearch - INFO - Запуск теста: test_search_works
+2026-02-10 22:42:11,748 - TestSearch - INFO - URL до поиска: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:11,748 - MainPage - INFO - Выполнение поиска: 'искусство'
+2026-02-10 22:42:12,017 - MainPage - INFO - Поиск 'искусство' выполнен
+2026-02-10 22:42:15,797 - TestSearch - INFO - URL после поиска: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE&tfc_div=:::
+2026-02-10 22:42:15,797 - TestSearch - INFO - Тест test_search_works пройден успешно
+2026-02-10 22:42:15,799 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:42:22,160 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:42:22,160 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:42:24,037 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:24,956 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:25,898 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:42:27,368 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:42:27,369 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:42:27,369 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:28,159 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:28,160 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:42:28,161 - TestSearch - INFO - Запуск теста: test_search_with_empty_query
+2026-02-10 22:42:28,161 - MainPage - INFO - Выполнение поиска: ''
+2026-02-10 22:42:28,369 - MainPage - INFO - Поиск '' выполнен
+2026-02-10 22:42:28,369 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:42:28,444 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:42:38,756 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:42:38,756 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:42:38,806 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:42:38,806 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:38,807 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:42:38,807 - TestSearch - INFO - Тест test_search_with_empty_query пройден успешно
+2026-02-10 22:42:38,808 - DriverFixture - INFO - Закрытие браузера
+2026-02-10 22:42:45,242 - DriverFixture - INFO - Создание WebDriver
+2026-02-10 22:42:45,243 - WDM - INFO - ====== WebDriver manager ======
+2026-02-10 22:42:47,049 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:48,148 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-10 22:42:49,090 - WDM - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-10 22:42:50,599 - DriverFixture - INFO - WebDriver успешно создан
+2026-02-10 22:42:50,599 - MainPageFixture - INFO - Создание MainPage
+2026-02-10 22:42:50,600 - MainPage - INFO - Открытие страницы: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:51,439 - MainPage - INFO - Страница открыта: https://www.masters-bookstore.ru/books
+2026-02-10 22:42:51,439 - MainPageFixture - INFO - MainPage успешно создана и открыта
+2026-02-10 22:42:51,440 - TestSearch - INFO - Запуск теста: test_search_with_special_chars
+2026-02-10 22:42:51,441 - MainPage - INFO - Выполнение поиска: '@#$%^&*()'
+2026-02-10 22:42:51,729 - MainPage - INFO - Поиск '@#$%^&*()' выполнен
+2026-02-10 22:42:51,729 - MainPage - INFO - Проверка загрузки главной страницы
+2026-02-10 22:42:51,806 - MainPage - WARNING - Элемент 'иконка корзины' не отображается
+2026-02-10 22:43:02,316 - MainPage - ERROR - Не удалось найти элемент ('xpath', "//a[contains(text(), 'книги') and @class='t-menu__link-item']"): Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11d5093
+	0x11d50d4
+	0xfcb490
+	0x10158da
+	0x1015b7b
+	0x1057b42
+	0x1038204
+	0x1055341
+	0x1037f56
+	0x10096c9
+	0x100a484
+	0x1427e34
+	0x14230c9
+	0x1440add
+	0x11edb38
+	0x11f58ad
+	0x11dd848
+	0x11dda12
+	0x11c75fa
+	0x76a0fcc9
+	0x775e82ae
+	0x775e827e
+
+2026-02-10 22:43:02,317 - MainPage - WARNING - Элемент 'меню 'книги'' не отображается
+2026-02-10 22:43:02,369 - MainPage - INFO - Заголовок страницы: Мasters Bookstore | Книги
+2026-02-10 22:43:02,369 - MainPage - INFO - Текущий URL: https://www.masters-bookstore.ru/books?tfc_sort%5B458288898%5D=created:desc&tfc_quantity%5B458288898%5D=y&tfc_query%5B458288898%5D=@%2523$%2525%5E&amp;*()&tfc_div=:::
+2026-02-10 22:43:02,370 - MainPage - INFO - Главная страница загружена
+2026-02-10 22:43:02,376 - TestSearch - INFO - Тест test_search_with_special_chars пройден успешно
+2026-02-10 22:43:02,378 - DriverFixture - INFO - Закрытие браузера
