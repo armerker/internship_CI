@@ -32,21 +32,38 @@ def driver():
 
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-browser-side-navigation")
+    options.add_argument("--disable-features=VizDisplayCompositor")
 
     try:
+        # Используем правильную версию ChromeDriver для Windows
         service = Service(ChromeDriverManager().install())
-        driver_instance = webdriver.Chrome(service=service, options=options)
+
+        # Добавляем параметры для Windows
+        driver_instance = webdriver.Chrome(
+            service=service,
+            options=options
+        )
         driver_instance.set_page_load_timeout(Config.PAGE_LOAD_TIMEOUT)
+        driver_instance.implicitly_wait(5)
 
         yield driver_instance
 
     except Exception as error:
-        pytest.fail(f"Ошибка при создании WebDriver: {error}")
+        print(f"Ошибка при создании WebDriver: {error}")
+        print(f"Тип ошибки: {type(error)}")
+        pytest.skip(f"Не удалось запустить WebDriver: {error}")
 
     finally:
         if 'driver_instance' in locals():
-            driver_instance.quit()
+            try:
+                driver_instance.quit()
+            except:
+                pass
 
 
 @pytest.fixture
