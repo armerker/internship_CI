@@ -26,14 +26,16 @@ class Config:
 CONFIG = Config()
 
 # Создаем директорию для логов если ее нет
-os.makedirs("logs", exist_ok=True)
+CONFIG_DIR = Path(__file__).parent.absolute()
+# Создаем путь к logs относительно config.py
+LOGS_DIR = CONFIG_DIR / "logs"
+os.makedirs(LOGS_DIR, exist_ok=True)
 
-# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("logs/test.log"),
+        logging.FileHandler(LOGS_DIR / "test.log"),  # Абсолютный путь
         logging.StreamHandler()
     ]
 )
