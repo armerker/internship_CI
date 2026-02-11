@@ -27,10 +27,13 @@ pipeline {
 
     post {
         always {
+            // 👈 ЭТО КЛЮЧЕВОЙ МОМЕНТ! БЕЗ ЭТОГО НЕ БУДЕТ ИКОНКИ!
             allure([
                 results: [[path: 'internship_SimberSoft_CI/allure-results']],
                 reportBuildPolicy: 'ALWAYS'
             ])
+
+            // JUnit отчет
             junit 'internship_SimberSoft_CI/test-results.xml'
         }
     }
