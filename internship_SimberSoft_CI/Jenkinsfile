@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        allure 'allure-2.36.0'   // ✅ ИСПРАВЛЕНО!
+    }
+
     stages {
         stage('Install') {
             steps {
@@ -27,13 +31,10 @@ pipeline {
 
     post {
         always {
-            // ✅ ПРОСТОЙ ПУТЬ - ОДНА ПАПКА!
             allure([
                 results: [[path: 'internship_SimberSoft_CI/allure-results']],
                 reportBuildPolicy: 'ALWAYS'
             ])
-
-            // ✅ JUnit тоже простой путь
             junit 'internship_SimberSoft_CI/test-results.xml'
         }
     }
