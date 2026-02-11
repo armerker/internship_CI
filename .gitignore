@@ -1,61 +1,24 @@
-# Создадим .gitignore в текущей папке (корне проекта)
-cat > .gitignore << 'EOF'
-# PyCharm
+# Allure
+allure-*
+allure.zip
+allure-results/
+allure-report/
+
+# IDE
 .idea/
+.vscode/
 *.iml
-*.ipr
-*.iws
 
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
-venv/
-.env/
-.venv/
-
-# Testing
+*.pyc
+*.pyo
+*.pyd
 .pytest_cache/
-.coverage
-htmlcov/
-*.cover
-*.py,cover
-.hypothesis/
+venv/
+env/
+.env
 
-# Logs
+# Логи
+logs/
 *.log
-
-# Reports
-report.html
-allure-results/
-test-results/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# ChromeDriver
-chromedriver*
-geckodriver*
-msedgedriver*
-IEDriverServer*
-EOF
