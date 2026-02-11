@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="834531ce-dcb7-407a-8987-a99781ccda43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internship_SimberSoft_CI/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/internship_SimberSoft_CI/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
