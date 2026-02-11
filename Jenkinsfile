@@ -2,14 +2,13 @@ pipeline {
     agent any
 
     tools {
-        allure 'allure-2.36.0'   // ✅ ИСПРАВЛЕНО!
+        allure 'allure-2.36.0'
     }
 
     stages {
         stage('Install') {
             steps {
                 bat '''
-                    cd internship_SimberSoft_CI
                     C:\\Python39\\python.exe -m pip install -r requirements.txt
                     C:\\Python39\\python.exe -m pip install allure-pytest==2.13.2
                 '''
@@ -19,7 +18,6 @@ pipeline {
         stage('Test') {
             steps {
                 bat '''
-                    cd internship_SimberSoft_CI
                     C:\\Python39\\python.exe -m pytest tests ^
                         --junitxml=test-results.xml ^
                         -v ^
