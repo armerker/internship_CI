@@ -1,0 +1,54 @@
+services:
+  selenoid:
+    image: aerokube/selenoid:latest
+    container_name: selenoid
+    network_mode: bridge
+    ports:
+      - "4444:4444"
+    environment:
+      - DOCKER_API_VERSION=1.44
+    volumes:
+      - ./selenoid:/etc/selenoid
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: ["-conf", "/etc/selenoid/browsers.json", "-limit", "5"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: unless-stopped
+
+  selenoid-ui:
+    image: aerokube/selenoid-ui:latest
+    container_name: selenoid-ui
+    network_mode: bridge
+    ports:
+      - "8080:8080"
+    command: ["--selenoid-uri", "http://selenoid:4444"]
+    depends_on:
+      - selenoid
+    restart: unless-stopped
+
+  tests:
+    build: .
+    container_name: tests-runner
+    network_mode: host
+    depends_on:
+      selenoid:
+        condition: service_started
+    environment:
+      - SELENOID_HOST=localhost
+      - SELENOID_PORT=4444
+      - PYTHONUNBUFFERED=1
+      - ALLURE_RESULTS=/app/allure-results
+    volumes:
+      - ./allure-results:/app/allure-results
+      - ./allure-reports:/app/allure-reports
+      - ./test-logs:/app/logs
+      - ./test-results.xml:/app/test-results.xml  # Добавлено для JUnit
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: no

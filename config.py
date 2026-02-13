@@ -9,7 +9,7 @@ class Config:
     """Конфигурационные настройки проекта."""
 
     # URLs
-    BASE_URL = "https://www.masters-bookstore.ru/books"
+    BASE_URL = "https://masters-bookstore.ru/books"
 
     # Browser settings
     BROWSER = "chrome"
@@ -27,7 +27,6 @@ CONFIG = Config()
 
 # Создаем директорию для логов если ее нет
 CONFIG_DIR = Path(__file__).parent.absolute()
-# Создаем путь к logs относительно config.py
 LOGS_DIR = CONFIG_DIR / "logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
 
@@ -35,7 +34,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler(LOGS_DIR / "test.log"),  # Абсолютный путь
+        logging.FileHandler(LOGS_DIR / "test.log"),
         logging.StreamHandler()
     ]
 )

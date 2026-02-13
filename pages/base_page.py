@@ -6,16 +6,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from config import Config
 
+
 class BasePage:
     """Базовый класс для всех Page Objects."""
 
-    def __init__(self, driver):
+    def __init__(self, driver, base_url=None):
         """Инициализировать базовую страницу.
 
         Args:
             driver: WebDriver instance
+            base_url: URL страницы (по умолчанию из Config)
         """
         self.driver = driver
+        self.base_url = base_url or Config.BASE_URL
         self.wait = WebDriverWait(driver, Config.TIMEOUT)
         self.logger = logging.getLogger(self.__class__.__name__)
 
@@ -123,21 +126,11 @@ class BasePage:
                 return False
         return False
 
-    def open_page(self, url=""):
-        """Открыть страницу.
-
-        Args:
-            url: Дополнительный путь к URL
-
-        Returns:
-            bool: True если страница открыта успешно
-        """
-        full_url = f"{Config.BASE_URL}/{url}" if url else Config.BASE_URL
-        self.logger.info("Открытие страницы: %s", full_url)
+    def open_page(self):
         try:
-            self.driver.get(full_url)
-            self.logger.info("Страница открыта: %s", full_url)
+            self.driver.get(self.base_url)
+            self.logger.info(f"Страница открыта: {self.driver.current_url}")
             return True
-        except Exception as error:
-            self.logger.error("Не удалось открыть страницу %s: %s", full_url, error)
+        except Exception as e:
+            self.logger.error(f"Ошибка: {e}")
             return False
