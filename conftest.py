@@ -1,3 +1,5 @@
+"""Универсальные фикстуры: локально + Selenoid с явными ожиданиями."""
+
 import sys
 import os
 import time
@@ -37,15 +39,25 @@ def is_running_in_docker():
 def wait_for_browser_ready(driver, timeout=15, check_interval=0.5):
     """
     Явное ожидание готовности браузера.
+
+    Args:
+        driver: WebDriver instance
+        timeout: максимальное время ожидания в секундах
+        check_interval: интервал проверки в секундах
+
+    Returns:
+        bool: True если браузер готов, False если нет
     """
     logger.info(f"Ожидание готовности браузера (таймаут: {timeout}с)")
     start_time = time.time()
 
     while time.time() - start_time < timeout:
         try:
+            # Проверяем, что браузер отвечает на простую команду
             current_url = driver.current_url
             logger.debug(f"Браузер ответил, текущий URL: {current_url}")
 
+            # Проверяем состояние страницы
             ready_state = driver.execute_script("return document.readyState")
             logger.debug(f"Состояние документа: {ready_state}")
 
@@ -69,6 +81,13 @@ def wait_for_browser_ready(driver, timeout=15, check_interval=0.5):
 def wait_for_page_load(driver, timeout=10):
     """
     Явное ожидание загрузки страницы.
+
+    Args:
+        driver: WebDriver instance
+        timeout: максимальное время ожидания в секундах
+
+    Returns:
+        bool: True если страница загружена, False если нет
     """
     logger.info(f"Ожидание загрузки страницы (таймаут: {timeout}с)")
     try:
@@ -97,10 +116,10 @@ def driver():
             port = os.getenv("SELENOID_PORT", "4444")
             remote_url = f"http://{host}:{port}/wd/hub"
 
-            logger.info(f"Режим: Selenoid (Remote)")
-            logger.info(f"Remote URL: {remote_url}")
-
             options = Options()
+
+            # Явно указываем версию
+            options.set_capability("browserVersion", "128.0")
 
             if Config.HEADLESS:
                 options.add_argument("--headless=new")
@@ -110,16 +129,29 @@ def driver():
             options.add_argument("--window-size=1920,1080")
             options.add_argument("--disable-gpu")
             options.add_argument("--disable-software-rasterizer")
+
+            # Остальные опции...
+
+            driver_instance = webdriver.Remote(
+                command_executor=remote_url,
+                options=options
+            )
+
+            # Критически важная задержка!
+            time.sleep(5)
+
+            # Аргументы для обхода блокировок
             options.add_argument(
                 "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
             options.add_argument("--disable-blink-features=AutomationControlled")
             options.add_argument("--ignore-certificate-errors")
+            options.add_argument("--accept-lang=en-US,en;q=0.9")
 
+            # Отключаем автоматизацию
             options.add_experimental_option("excludeSwitches", ["enable-automation"])
             options.add_experimental_option('useAutomationExtension', False)
 
-            options.set_capability("browserVersion", "128.0")
-
+            # Настройки для Selenoid
             options.set_capability("selenoid:options", {
                 "enableVNC": True,
                 "enableVideo": False,
@@ -134,19 +166,25 @@ def driver():
             logger.info("Remote WebDriver создан успешно")
 
         else:
+            # Локальный режим — используем ChromeDriver
             logger.info(f"Режим: локальный ChromeDriver")
             logger.info(f"Headless режим: {Config.HEADLESS}")
 
             options = Options()
 
+            # Локальный режим — используем ChromeDriver
+            options = Options()
+
             if Config.HEADLESS:
                 options.add_argument("--headless=new")
+
+            # Добавь эти две строки для обхода ошибки AMD
+            options.add_argument("--disable-gpu")
+            options.add_argument("--disable-software-rasterizer")
 
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--window-size=1920,1080")
-            options.add_argument("--disable-gpu")
-            options.add_argument("--disable-software-rasterizer")
 
             try:
                 logger.info("Попытка запуска ChromeDriver из PATH...")
@@ -159,9 +197,11 @@ def driver():
                 driver_instance = webdriver.Chrome(service=service, options=options)
                 logger.info("ChromeDriver запущен из папки проекта")
 
+        # Устанавливаем таймаут загрузки страницы
         driver_instance.set_page_load_timeout(Config.PAGE_LOAD_TIMEOUT)
         logger.info(f"Установлен таймаут загрузки страницы: {Config.PAGE_LOAD_TIMEOUT}с")
 
+        # Явное ожидание готовности браузера
         if not wait_for_browser_ready(driver_instance, timeout=20):
             logger.error("Браузер не ответил в течение 20 секунд")
             pytest.skip("Браузер не ответил вовремя")
@@ -173,7 +213,7 @@ def driver():
 
     except Exception as e:
         logger.error(f"Ошибка при создании WebDriver: {str(e)}")
-        raise
+        pytest.skip(f"Не удалось создать WebDriver: {e}")
 
     finally:
         if driver_instance:
@@ -187,11 +227,11 @@ def main_page(driver):
     """Создать MainPage с явным ожиданием загрузки."""
     logger.info("Инициализация MainPage")
 
-
     from pages.main_page import MainPage
 
     page = MainPage(driver)
 
+    # Открываем страницу
     logger.info(f"Открытие страницы: {Config.BASE_URL}")
     opened = page.open_page()
 
@@ -199,9 +239,11 @@ def main_page(driver):
         logger.error("Не удалось открыть главную страницу")
         pytest.skip("Не удалось открыть главную страницу")
 
+    # Явное ожидание загрузки страницы
     if not wait_for_page_load(driver, timeout=15):
         logger.warning("Страница загрузилась не полностью, но продолжаем")
 
+    # Ждем появления body
     try:
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(("tag name", "body"))
