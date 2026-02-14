@@ -1,26 +1,26 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
+    environment {
+        REPO_URL = 'https://github.com/armerker/internship_CI'
+        BRANCH = 'master'
+    }
+
     tools {
         allure 'allure-2.36.0'
     }
 
     stages {
-        stage('Install') {
+        stage('Test in Docker') {
             steps {
                 bat '''
-                    C:\\Python39\\python.exe -m pip install -r requirements.txt
-                    C:\\Python39\\python.exe -m pip install allure-pytest==2.13.2
-                '''
-            }
-        }
-        stage('Test') {
-            steps {
-                bat '''
-                    C:\\Python39\\python.exe -m pytest tests ^
-                        --junitxml=test-results.xml ^
-                        -v ^
-                        --alluredir=allure-results
+                    docker-compose up -d selenoid
+                    timeout /t 15
+                    docker-compose run --rm tests
                 '''
             }
         }
@@ -28,10 +28,8 @@ pipeline {
 
     post {
         always {
-            allure([
-                results: [[path: 'allure-results']],
-                reportBuildPolicy: 'ALWAYS'
-            ])
+            bat 'docker-compose down'
+            allure results: [[path: 'allure-results']]
             junit 'test-results.xml'
         }
     }
