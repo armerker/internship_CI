@@ -19,6 +19,6 @@ venv/
 env/
 .env
 
-# Логии
+# Логииа
 logs/
 *.log
