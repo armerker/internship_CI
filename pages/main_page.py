@@ -154,7 +154,7 @@ class MainPage(BasePage):
         return self.click_element(self.CART_ICON)
 
     def get_current_sort_text(self):
-        """Получить текущую выбранную сортировку.
+        """Получить текущую выбранную сортировкуе.
 
         Returns:
             str: Текст текущей сортировки или пустая строка

@@ -1,19 +1,15 @@
 pipeline {
     agent any
-
     triggers {
         githubPush()
     }
-
     environment {
         REPO_URL = 'https://github.com/armerker/internship_CI'
         BRANCH = 'master'
     }
-
     tools {
         allure 'allure-2.36.0'
     }
-
     stages {
         stage('Test in Docker') {
             steps {
@@ -25,7 +21,6 @@ pipeline {
             }
         }
     }
-
     post {
         always {
             bat 'docker-compose down'
